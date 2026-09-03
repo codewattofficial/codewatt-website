@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeWatt — Web Design, Electronics & IoT Solutions</title>
+  <meta name="description" content="CodeWatt is a technology studio building premium websites for businesses worldwide, and Arduino, robotics & IoT projects for Bangladeshi students." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://codewatt.example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CodeWatt — Web Design, Electronics & IoT Solutions" />
+  <meta property="og:description" content="Modern websites for businesses worldwide. Arduino, robotics & IoT projects for Bangladeshi students." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap grid utilities + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <!-- TOP BAR & NAV -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span><i class="bi bi-geo-alt-fill"></i>Building from Bangladesh • Working Worldwide</span>
+      <div class="topbar-social">
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="cw-nav" id="navbar">
+    <div class="cw-nav-inner">
+      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-lightning-charge-fill"></i></span><span>Code<span class="accent">Watt</span></span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html" class="btn-cw btn-primary-cw d-none d-md-inline-flex">Start a Project <i class="bi bi-arrow-up-right"></i></a>
+        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-panel" id="mobilePanel">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn-cw btn-primary-cw" style="width:100%;">Start a Project</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container-cw">
+        <div class="hero-grid">
+          <div>
+            <span class="hero-badge"><span class="dot"></span> Web · Electronics · IoT</span>
+            <h1 class="hero-title">Turning Ideas Into<br><span class="accent-italic">Digital & Smart</span> Solutions.</h1>
+            <p class="hero-desc">CodeWatt is a small technology studio building premium websites for businesses worldwide, and Arduino, robotics & IoT projects for Bangladeshi students.</p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn-cw btn-primary-cw">Start a Project <i class="bi bi-arrow-up-right"></i></a>
+              <a href="#projects" class="btn-cw btn-outline-cw">Explore Our Work</a>
+            </div>
+            <div class="hero-trust">
+              <div><strong>5+</strong>Years Experience</div>
+              <div><strong>50+</strong>Projects Delivered</div>
+              <div><strong>30+</strong>Happy Clients</div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <div class="hero-frame-bar"><span></span><span></span><span></span></div>
+              <img src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?auto=format&fit=crop&w=1200&q=80" alt="CodeWatt workspace" loading="lazy" />
+            </div>
+            <div class="float-chip chip-1"><i class="bi bi-window"></i> Web Development</div>
+            <div class="float-chip chip-2"><i class="bi bi-cpu"></i> Arduino & IoT</div>
+            <div class="float-chip chip-3"><i class="bi bi-robot"></i> Robotics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY -->
+    <section class="section-tight" aria-label="Trusted by">
+      <div class="container-cw">
+        <div class="marquee-head text-center mb-5">
+          <p class="eyebrow justify-content-center">Trusted by</p>
+          <h2 class="section-heading" style="font-size:1.6rem;">Brands that trust CodeWatt</h2>
+          <p class="section-sub mx-auto" style="margin:0 auto;">Demo brand marks — movement of the train, professional.</p>
+        </div>
+      </div>
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span class="brand-logo"><span class="mark">NM</span><span class="name">NovaMart</span></span>
+          <span class="brand-logo"><span class="mark">ES</span><span class="name">EduSpark</span></span>
+          <span class="brand-logo"><span class="mark">SN</span><span class="name">SmartNest</span></span>
+          <span class="brand-logo"><span class="mark">BP</span><span class="name">BuildPro</span></span>
+          <span class="brand-logo"><span class="mark">TB</span><span class="name">TechBridge</span></span>
+          <span class="brand-logo"><span class="mark">GP</span><span class="name">GreenPath</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">NM</span><span class="name">NovaMart</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">ES</span><span class="name">EduSpark</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">SN</span><span class="name">SmartNest</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">BP</span><span class="name">BuildPro</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">TB</span><span class="name">TechBridge</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">GP</span><span class="name">GreenPath</span></span>
+        </div>
+      </div>
+      <div class="marquee-wrap mt-3">
+        <div class="marquee-track reverse">
+          <span class="brand-logo"><span class="mark">PC</span><span class="name">PixelCraft</span></span>
+          <span class="brand-logo"><span class="mark">NX</span><span class="name">Nexora</span></span>
+          <span class="brand-logo"><span class="mark">BL</span><span class="name">BrightLabs</span></span>
+          <span class="brand-logo"><span class="mark">UH</span><span class="name">UrbanHive</span></span>
+          <span class="brand-logo"><span class="mark">FW</span><span class="name">FutureWorks</span></span>
+          <span class="brand-logo"><span class="mark">AG</span><span class="name">AlphaGrid</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">PC</span><span class="name">PixelCraft</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">NX</span><span class="name">Nexora</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">BL</span><span class="name">BrightLabs</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">UH</span><span class="name">UrbanHive</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">FW</span><span class="name">FutureWorks</span></span>
+          <span class="brand-logo" aria-hidden="true"><span class="mark">AG</span><span class="name">AlphaGrid</span></span>
+        </div>
+      </div>
+      <p class="demo-note text-center text-muted small mt-4">Demo brand marks for illustration — not actual clients.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services">
+      <div class="container-cw">
+        <div class="section-head reveal">
+          <p class="eyebrow">What we build</p>
+          <h2 class="section-heading">Services</h2>
+          <p class="section-sub">Practical, creative, and technology-driven solutions — for businesses and students.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-card-image">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" alt="Web design">
+              <span class="service-card-num">01</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon"><i class="bi bi-window"></i></div>
+              <h3>Web Design & Development</h3>
+              <p>Modern, responsive websites and web applications for businesses and international clients.</p>
+              <div class="service-caps"><span>Business Website</span><span>Landing Page</span><span>E-commerce</span><span>UI/UX</span></div>
+              <a href="contact.html" class="btn-cw btn-outline-cw service-readmore">Read More <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card-image">
+              <img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?auto=format&fit=crop&w=800&q=80" alt="Electronics">
+              <span class="service-card-num">02</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon"><i class="bi bi-cpu"></i></div>
+              <h3>Electronics & Robotics</h3>
+              <p>Custom Arduino, robotics and academic projects for students and competitions.</p>
+              <div class="service-caps"><span>Science Fair</span><span>Arduino</span><span>Robotics</span><span>Polytechnic</span></div>
+              <a href="contact.html" class="btn-cw btn-outline-cw service-readmore">Read More <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card-image">
+              <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="IoT">
+              <span class="service-card-num">03</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon"><i class="bi bi-wifi"></i></div>
+              <h3>IoT Solutions</h3>
+              <p>Smart systems connecting sensors, microcontrollers and dashboards.</p>
+              <div class="service-caps"><span>Smart Home</span><span>Sensor Monitoring</span><span>ESP32</span></div>
+              <a href="contact.html" class="btn-cw btn-outline-cw service-readmore">Read More <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR STACK -->
+    <section class="section" id="stack">
+      <div class="container-cw">
+        <div class="stack-panel reveal">
+          <div class="section-head">
+            <p class="eyebrow">Our Stack</p>
+            <h2 class="section-heading">Technology meets creativity</h2>
+            <p class="section-sub">Modern web tools, microcontrollers, sensors, and creative problem-solving.</p>
+          </div>
+          <div class="marquee-wrap stack-row">
+            <div class="marquee-track" style="animation-duration:28s;">
+              <span class="tech-chip"><i class="bi bi-filetype-html"></i> HTML5</span>
+              <span class="tech-chip"><i class="bi bi-filetype-css"></i> CSS3</span>
+              <span class="tech-chip"><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span class="tech-chip"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+              <span class="tech-chip"><i class="bi bi-phone"></i> Responsive</span>
+              <span class="tech-chip"><i class="bi bi-palette"></i> UI/UX</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-filetype-html"></i> HTML5</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-filetype-css"></i> CSS3</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-phone"></i> Responsive</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-palette"></i> UI/UX</span>
+            </div>
+          </div>
+          <div class="marquee-wrap stack-row">
+            <div class="marquee-track reverse" style="animation-duration:30s;">
+              <span class="tech-chip"><i class="bi bi-cpu"></i> Arduino</span>
+              <span class="tech-chip"><i class="bi bi-broadcast"></i> ESP32</span>
+              <span class="tech-chip"><i class="bi bi-motherboard"></i> Raspberry Pi</span>
+              <span class="tech-chip"><i class="bi bi-rulers"></i> Sensors</span>
+              <span class="tech-chip"><i class="bi bi-cpu-fill"></i> Microcontrollers</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-cpu"></i> Arduino</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-broadcast"></i> ESP32</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-motherboard"></i> Raspberry Pi</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-rulers"></i> Sensors</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-cpu-fill"></i> Microcontrollers</span>
+            </div>
+          </div>
+          <div class="marquee-wrap stack-row">
+            <div class="marquee-track" style="animation-duration:26s;">
+              <span class="tech-chip"><i class="bi bi-wifi"></i> IoT</span>
+              <span class="tech-chip"><i class="bi bi-robot"></i> Robotics</span>
+              <span class="tech-chip"><i class="bi bi-gear-wide-connected"></i> Automation</span>
+              <span class="tech-chip"><i class="bi bi-diagram-3"></i> Smart Systems</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-wifi"></i> IoT</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-robot"></i> Robotics</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-gear-wide-connected"></i> Automation</span>
+              <span class="tech-chip" aria-hidden="true"><i class="bi bi-diagram-3"></i> Smart Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CODEWATT -->
+    <section class="section section-alt" id="why">
+      <div class="container-cw">
+        <div class="section-head reveal"><p class="eyebrow">Why CodeWatt</p><h2 class="section-heading">Small team. Serious technology.</h2></div>
+        <div class="stat-row reveal">
+          <div class="stat-box"><div class="stat-num"><span class="counter" data-target="5" data-suffix="+">0</span></div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-box"><div class="stat-num"><span class="counter" data-target="50" data-suffix="+">0</span></div><div class="stat-label">Projects Delivered</div></div>
+          <div class="stat-box"><div class="stat-num"><span class="counter" data-target="30" data-suffix="+">0</span></div><div class="stat-label">Happy Clients</div></div>
+          <div class="stat-box"><div class="stat-num"><span class="counter" data-target="100" data-suffix="%">0</span></div><div class="stat-label">Commitment</div></div>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit-card reveal"><div class="benefit-icon"><i class="bi bi-lightbulb"></i></div><h3>Practical</h3><p>Useful, real-world outcomes.</p></div>
+          <div class="benefit-card reveal reveal-delay-1"><div class="benefit-icon"><i class="bi bi-palette"></i></div><h3>Creative</h3><p>Modern design & innovation.</p></div>
+          <div class="benefit-card reveal reveal-delay-2"><div class="benefit-icon"><i class="bi bi-cpu"></i></div><h3>Technical</h3><p>Web, electronics & IoT.</p></div>
+          <div class="benefit-card reveal reveal-delay-3"><div class="benefit-icon"><i class="bi bi-headset"></i></div><h3>Supportive</h3><p>Clear communication.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="projects">
+      <div class="container-cw">
+        <div class="section-head reveal"><p class="eyebrow">Portfolio</p><h2 class="section-heading">Featured Projects</h2></div>
+        <div class="portfolio-feature reveal">
+          <div class="pf-visual"><span class="pf-cat">Business Website</span><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="NovaMart"></div>
+          <div class="pf-text"><div class="pf-num">01</div><h3>NovaMart Business Website</h3><p>A conversion-focused business website concept.</p><span class="pf-tech">HTML · CSS · JS</span><a href="projects.html" class="btn-cw btn-ghost-cw">View Case Study <i class="bi bi-arrow-right"></i></a></div>
+        </div>
+        <div class="portfolio-feature reverse reveal">
+          <div class="pf-visual"><span class="pf-cat">Smart IoT</span><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80" alt="Smart home"></div>
+          <div class="pf-text"><div class="pf-num">02</div><h3>Smart Home Monitoring</h3><p>ESP32 dashboard with sensors.</p><span class="pf-tech">ESP32 · Sensors</span><a href="projects.html" class="btn-cw btn-ghost-cw">View Case Study <i class="bi bi-arrow-right"></i></a></div>
+        </div>
+        <div class="portfolio-feature reveal">
+          <div class="pf-visual"><span class="pf-cat">Robotics</span><img src="https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?auto=format&fit=crop&w=1000&q=80" alt="Robot"></div>
+          <div class="pf-text"><div class="pf-num">03</div><h3>Line Following Robot</h3><p>Arduino project for competitions.</p><span class="pf-tech">Arduino · IR Sensor</span><a href="projects.html" class="btn-cw btn-ghost-cw">View Case Study <i class="bi bi-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section class="section section-alt" id="audience">
+      <div class="container-cw">
+        <div class="section-head reveal"><p class="eyebrow">Who We Build For</p><h2 class="section-heading">Two audiences. One studio.</h2></div>
+        <div class="audience-split reveal" id="audienceSplit">
+          <div class="audience-panel business" id="panelBusiness"><div class="ap-content"><span class="ap-tag">For Businesses</span><h3>Build a stronger digital presence.</h3><p class="ap-desc">Websites, web apps, UI/UX.</p><div class="ap-tags"><span>Business Website</span><span>E-commerce</span><span>UI/UX</span></div><a href="contact.html" class="ap-cta">Start a Business Project <i class="bi bi-arrow-up-right"></i></a></div></div>
+          <div class="audience-panel students" id="panelStudents"><div class="ap-content"><span class="ap-tag">For Students</span><h3>Turn ideas into prototypes.</h3><p class="ap-desc">Electronics, robotics, IoT projects.</p><div class="ap-tags"><span>Science Fair</span><span>Arduino</span><span>Robotics</span><span>IoT</span></div><a href="contact.html" class="ap-cta">Build a Student Project <i class="bi bi-arrow-up-right"></i></a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESS – fully reimagined with flow and personality
+         ============================================================ -->
+    <section class="section" id="process">
+      <div class="container-cw">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Process</p>
+          <h2 class="section-heading">From Idea to Impact</h2>
+          <p class="section-sub">A creative, structured journey — every project follows the same thoughtful rhythm.</p>
+        </div>
+        <div class="process-wrap">
+          <div class="process-grid">
+            <!-- 1 -->
+            <div class="process-card reveal">
+              <div class="process-card-num">01</div>
+              <i class="bi bi-chat-dots-fill process-card-icon"></i>
+              <h4>Discover</h4>
+              <p>Deep listening &amp; needs mapping</p>
+            </div>
+            <!-- 2 -->
+            <div class="process-card reveal reveal-delay-1">
+              <div class="process-card-num">02</div>
+              <i class="bi bi-clipboard-data process-card-icon"></i>
+              <h4>Blueprint</h4>
+              <p>Scope, strategy &amp; milestones</p>
+            </div>
+            <!-- 3 -->
+            <div class="process-card reveal reveal-delay-2">
+              <div class="process-card-num">03</div>
+              <i class="bi bi-bezier2 process-card-icon"></i>
+              <h4>Design</h4>
+              <p>Wireframes &amp; creative direction</p>
+            </div>
+            <!-- 4 -->
+            <div class="process-card reveal reveal-delay-3">
+              <div class="process-card-num">04</div>
+              <i class="bi bi-code-square process-card-icon"></i>
+              <h4>Build</h4>
+              <p>Development &amp; iterative testing</p>
+            </div>
+            <!-- 5 -->
+            <div class="process-card reveal reveal-delay-4">
+              <div class="process-card-num">05</div>
+              <i class="bi bi-rocket-takeoff process-card-icon"></i>
+              <h4>Launch</h4>
+              <p>Deploy &amp; post-launch care</p>
+            </div>
+          </div>
+        </div>
+        <!-- subtle note: creative arrow line is in CSS -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="about">
+      <div class="container-cw">
+        <div class="about-grid reveal">
+          <div class="about-visual position-relative">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80" alt="Team working">
+            <div class="about-float"><i class="bi bi-bullseye"></i> Turning ideas into solutions</div>
+          </div>
+          <div class="about-text">
+            <p class="eyebrow">About CodeWatt</p>
+            <h2 class="section-heading">Technology with purpose.</h2>
+            <p>CodeWatt is a technology agency focused on web design, electronics, robotics and IoT. We serve businesses, startups and students — in Bangladesh and abroad.</p>
+            <p class="bn" lang="bn">আমরা বাংলাদেশ ও বিদেশের বিভিন্ন Business, Startup এবং Individual Client-এর জন্য আধুনিক ও প্রফেশনাল Website Design এবং Development সেবা প্রদান করি।</p>
+            <div class="about-extra">
+              <p class="bn" lang="bn">এছাড়া School, College ও Polytechnic শিক্ষার্থীদের জন্য Electronics, Robotics এবং IoT Project তৈরি করি।</p>
+              <p>We focus on documentation, guidance and after-delivery support to ensure every project is a success.</p>
+            </div>
+            <div class="btn-readmore">
+              <a href="about.html" id="readMoreBtn" class="btn-cw btn-outline-cw btn-sm">Read More <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <span class="about-tag mt-3"><i class="bi bi-geo-alt-fill"></i> Building from Bangladesh • Working worldwide</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container-cw">
+        <div class="section-head reveal"><p class="eyebrow">Testimonials</p><h2 class="section-heading">What clients say</h2></div>
+      </div>
+      <div class="test-marquee" id="testMarquee">
+        <div class="test-track" id="testTrack">
+          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"CodeWatt helped us create a clean, modern website that truly represents our brand."</p><div class="profile"><img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Rahim Hasan</h5><span>Startup Founder</span></div></div></div>
+          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"The project explanation and documentation helped me understand my electronics project thoroughly."</p><div class="profile"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Nusrat Jahan</h5><span>College Student</span></div></div></div>
+          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"Responsive, creative, and easy to communicate with. Highly recommended."</p><div class="profile"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Arif Mahmud</h5><span>Business Owner</span></div></div></div>
+          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"Our online store launched on time, and the checkout flow has been smooth ever since."</p><div class="profile"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Farhana Akter</h5><span>E-commerce Founder</span></div></div></div>
+          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"My IoT project for the polytechnic exhibition worked flawlessly on presentation day."</p><div class="profile"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Tanvir Ahmed</h5><span>Polytechnic Student</span></div></div></div>
+          <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"They understood exactly what a small local business needed, without overcomplicating it."</p><div class="profile"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Shirin Sultana</h5><span>Small Business Owner</span></div></div></div>
+          <!-- duplicates for loop -->
+          <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"CodeWatt helped us create a clean, modern website that truly represents our brand."</p><div class="profile"><img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Rahim Hasan</h5><span>Startup Founder</span></div></div></div>
+          <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"The project explanation and documentation helped me understand my electronics project thoroughly."</p><div class="profile"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Nusrat Jahan</h5><span>College Student</span></div></div></div>
+          <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"Responsive, creative, and easy to communicate with. Highly recommended."</p><div class="profile"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Arif Mahmud</h5><span>Business Owner</span></div></div></div>
+          <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"Our online store launched on time, and the checkout flow has been smooth ever since."</p><div class="profile"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Farhana Akter</h5><span>E-commerce Founder</span></div></div></div>
+          <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"My IoT project for the polytechnic exhibition worked flawlessly on presentation day."</p><div class="profile"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Tanvir Ahmed</h5><span>Polytechnic Student</span></div></div></div>
+          <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"They understood exactly what a small local business needed, without overcomplicating it."</p><div class="profile"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Shirin Sultana</h5><span>Small Business Owner</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section pt-0">
+      <div class="container-cw">
+        <div class="final-cta reveal">
+          <h2>Have an idea? Let's build it.</h2>
+          <p>From digital experiences to smart technology, let's turn your idea into something real.</p>
+          <a href="contact.html" class="btn-cw btn-primary-cw">Start a Project <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+    <footer class="footer">
+    <div class="container-cw">
+      <div class="footer-newsletter reveal">
+        <div>
+          <h5>Stay in the loop</h5>
+          <p>Occasional updates on new projects, IoT experiments & tech notes — no spam, ever.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button>
+        </form>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-lightning-charge-fill"></i></span><span>Code<span class="accent" style="color:#7FA8FF;">Watt</span></span></a>
+          <p class="desc">Small technology studio building modern websites, electronics, robotics & IoT — for businesses worldwide and students across Bangladesh.</p>
+          <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-github"></i></a></div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6"><h5>Company</h5><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="#">Career</a></li><li><a href="#">Blog</a></li></ul></div>
+        <div class="col-lg-2 col-md-6 col-6"><h5>Services</h5><ul class="footer-links"><li><a href="services.html">Web Design</a></li><li><a href="services.html">Electronics</a></li><li><a href="services.html">IoT Solutions</a></li></ul></div>
+        <div class="col-lg-4 col-md-6">
+          <h5>Get in Touch</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i> Chattogram, Bangladesh</li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:hello@codewatt.example.com">hello@codewatt.example.com</a></li>
+            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+8801000000000">+880 1XXX-XXXXXX</a></li>
+            <li><i class="bi bi-clock-fill"></i> Sat – Thu, 10am – 7pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 CodeWatt. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="./assets/js/script.js"></script>
+
+</body></html>
