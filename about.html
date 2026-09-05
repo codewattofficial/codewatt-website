@@ -3,54 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About CodeWatt — Technology Studio for Web & IoT</title>
-  <meta name="description" content="Learn about CodeWatt — a technology studio from Bangladesh building websites, electronics, robotics & IoT solutions. Our story, values, and team." />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="canonical" href="https://codewatt.example.com/about.html" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="About CodeWatt — Technology with Purpose" />
-  <meta property="og:description" content="CodeWatt is a small studio with big ideas. Web, electronics, robotics & IoT for businesses and students worldwide." />
-
-  <!-- Fonts -->
+  <title>About — CodeWatt</title>
+  <meta name="theme-color" content="#0A1A0A" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Bootstrap grid + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head><body>
-  <!-- TOP BAR & NAV -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
   <div class="topbar">
     <div class="topbar-inner">
       <span><i class="bi bi-geo-alt-fill"></i>Building from Bangladesh • Working Worldwide</span>
       <div class="topbar-social">
-        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
       </div>
     </div>
   </div>
-
   <nav class="cw-nav" id="navbar">
     <div class="cw-nav-inner">
-      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-lightning-charge-fill"></i></span><span>Code<span class="accent">Watt</span></span></a>
+      <a href="index.html" class="logo"><img src="img/header-logo.png" alt="CodeWatt" class="logo-img"></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-right">
         <a href="contact.html" class="btn-cw btn-primary-cw d-none d-md-inline-flex">Start a Project <i class="bi bi-arrow-up-right"></i></a>
-        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel"><span></span><span></span><span></span></button>
+        <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
       </div>
     </div>
     <div class="mobile-panel" id="mobilePanel">
@@ -58,28 +46,26 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn-cw btn-primary-cw" style="width:100%;">Start a Project</a></li>
+        <li><a href="contact.html" class="btn-cw btn-primary-cw" style="width:100%;justify-content:center;">Start a Project</a></li>
       </ul>
     </div>
   </nav>
-
   <main>
-
-    <!-- HERO ABOUT -->
-    <section class="section" id="aboutHero">
+    <section class="section">
       <div class="container-cw">
         <div class="about-hero-grid reveal">
           <div>
             <p class="eyebrow">About CodeWatt</p>
             <h1 class="section-heading">Technology with purpose.</h1>
             <p class="section-sub">CodeWatt is a small technology studio from Bangladesh, building modern websites, electronics, robotics and IoT solutions for businesses, startups and students across the globe.</p>
-            <p class="mt-3">We believe in practical, creative, and accessible technology. From a startup landing page to a student science fair project, every build gets the same attention to detail and commitment to quality.</p>
+            <p class="mt-3" style="color:var(--brand-muted);">We believe in practical, creative, and accessible technology. From a startup landing page to a student science fair project, every build gets the same attention to detail and commitment to quality.</p>
             <div class="mission-box">
               <i class="bi bi-lightbulb"></i>
               <h4>Our mission</h4>
-              <p class="mt-1" style="color:var(--muted);">To empower businesses with a strong digital presence and help students turn their ideas into working prototypes — all from one passionate studio.</p>
+              <p style="color:var(--brand-muted);">To empower businesses with a strong digital presence and help students turn their ideas into working prototypes — all from one passionate studio.</p>
             </div>
           </div>
           <div class="about-hero-img">
@@ -88,21 +74,17 @@
         </div>
       </div>
     </section>
-
-    <!-- STATS -->
-    <section class="section section-alt" id="aboutStats">
+    <section class="section section-alt">
       <div class="container-cw">
         <div class="stats-about reveal">
-          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="5" data-suffix="+">0</span></div><p class="text-muted">Years Experience</p></div>
-          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="50" data-suffix="+">0</span></div><p class="text-muted">Projects Done</p></div>
-          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="30" data-suffix="+">0</span></div><p class="text-muted">Happy Clients</p></div>
-          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="3" data-suffix="">0</span></div><p class="text-muted">Core Services</p></div>
+          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="5" data-suffix="+">0</span></div><p>Years Experience</p></div>
+          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="50" data-suffix="+">0</span></div><p>Projects Done</p></div>
+          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="30" data-suffix="+">0</span></div><p>Happy Clients</p></div>
+          <div class="stat-about"><div class="stat-num"><span class="counter" data-target="3" data-suffix="">0</span></div><p>Core Services</p></div>
         </div>
       </div>
     </section>
-
-    <!-- VALUES -->
-    <section class="section" id="values">
+    <section class="section">
       <div class="container-cw">
         <div class="section-head reveal">
           <p class="eyebrow">Our values</p>
@@ -118,9 +100,7 @@
         </div>
       </div>
     </section>
-
-    <!-- TIMELINE / STORY -->
-    <section class="section section-alt" id="journey">
+    <section class="section section-alt">
       <div class="container-cw">
         <div class="section-head reveal">
           <p class="eyebrow">Our journey</p>
@@ -135,8 +115,6 @@
         </div>
       </div>
     </section>
-
-    <!-- CALL TO ACTION -->
     <section class="section text-center">
       <div class="container-cw reveal">
         <p class="eyebrow justify-content-center">Let's work together</p>
@@ -146,45 +124,26 @@
       </div>
     </section>
   </main>
-
-  <!-- FOOTER -->
-    <footer class="footer">
+  <footer class="footer">
     <div class="container-cw">
-      <div class="footer-newsletter reveal">
-        <div>
-          <h5>Stay in the loop</h5>
-          <p>Occasional updates on new projects, IoT experiments & tech notes — no spam, ever.</p>
-        </div>
-        <form class="newsletter-form" onsubmit="return false;">
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button>
-        </form>
+      <div class="footer-newsletter">
+        <div><h5>Stay in the loop</h5><p>Occasional updates on new projects, IoT experiments & tech notes — no spam, ever.</p></div>
+        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email address" required><button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button></form>
       </div>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
-          <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-lightning-charge-fill"></i></span><span>Code<span class="accent" style="color:#7FA8FF;">Watt</span></span></a>
+          <a href="index.html" class="logo"><img src="img/footer-logo.png" alt="CodeWatt" class="logo-mark-img"><span>Code<span class="accent">Watt</span></span></a>
           <p class="desc">Small technology studio building modern websites, electronics, robotics & IoT — for businesses worldwide and students across Bangladesh.</p>
           <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-github"></i></a></div>
         </div>
-        <div class="col-lg-2 col-md-6 col-6"><h5>Company</h5><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="#">Career</a></li><li><a href="#">Blog</a></li></ul></div>
+        <div class="col-lg-2 col-md-6 col-6"><h5>Company</h5><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
         <div class="col-lg-2 col-md-6 col-6"><h5>Services</h5><ul class="footer-links"><li><a href="services.html">Web Design</a></li><li><a href="services.html">Electronics</a></li><li><a href="services.html">IoT Solutions</a></li></ul></div>
-        <div class="col-lg-4 col-md-6">
-          <h5>Get in Touch</h5>
-          <ul class="footer-contact">
-            <li><i class="bi bi-geo-alt-fill"></i> Chattogram, Bangladesh</li>
-            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:hello@codewatt.example.com">hello@codewatt.example.com</a></li>
-            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+8801000000000">+880 1XXX-XXXXXX</a></li>
-            <li><i class="bi bi-clock-fill"></i> Sat – Thu, 10am – 7pm</li>
-          </ul>
-        </div>
+        <div class="col-lg-4 col-md-6"><h5>Get in Touch</h5><ul class="footer-contact"><li><i class="bi bi-geo-alt-fill"></i> Chattogram, Bangladesh</li><li><i class="bi bi-envelope-fill"></i> <a href="mailto:hello@codewatt.com">hello@codewatt.com</a></li><li><i class="bi bi-telephone-fill"></i> <a href="tel:+8801000000000">+880 1XXX-XXXXXX</a></li><li><i class="bi bi-clock-fill"></i> Sat – Thu, 10am – 7pm</li></ul></div>
       </div>
       <div class="footer-bottom"><span>© 2026 CodeWatt. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
     </div>
   </footer>
-
-  <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-
-  <script src="./assets/js/script.js"></script>
-
+  <button class="back-top" id="backTop"><i class="bi bi-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
 </html>

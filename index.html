@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeWatt — Web Design, Electronics & IoT Solutions</title>
   <meta name="description" content="CodeWatt is a technology studio building premium websites for businesses worldwide, and Arduino, robotics & IoT projects for Bangladeshi students." />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#0A1A0A" />
   <link rel="canonical" href="https://codewatt.example.com/" />
 
   <!-- Open Graph -->
@@ -23,10 +23,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- TOP BAR & NAV -->
+
+  <!-- ============================================================
+       TOPBAR
+       ============================================================ -->
   <div class="topbar">
     <div class="topbar-inner">
       <span><i class="bi bi-geo-alt-fill"></i>Building from Bangladesh • Working Worldwide</span>
@@ -40,19 +43,23 @@
     </div>
   </div>
 
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
   <nav class="cw-nav" id="navbar">
     <div class="cw-nav-inner">
-      <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-lightning-charge-fill"></i></span><span>Code<span class="accent">Watt</span></span></a>
+      <a href="index.html" class="logo"><img src="img/header-logo.png" alt="CodeWatt" class="logo-img"></a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-right">
         <a href="contact.html" class="btn-cw btn-primary-cw d-none d-md-inline-flex">Start a Project <i class="bi bi-arrow-up-right"></i></a>
-        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel"><span></span><span></span><span></span></button>
+        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
     <div class="mobile-panel" id="mobilePanel">
@@ -60,16 +67,20 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn-cw btn-primary-cw" style="width:100%;">Start a Project</a></li>
+        <li><a href="contact.html" class="btn-cw btn-primary-cw" style="width:100%;justify-content:center;">Start a Project</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
   <main>
 
-    <!-- HERO -->
+    <!-- ========== HERO ========== -->
     <section class="hero" id="hero">
       <div class="hero-grid-bg" aria-hidden="true"></div>
       <div class="container-cw">
@@ -101,7 +112,7 @@
       </div>
     </section>
 
-    <!-- TRUSTED BY -->
+    <!-- ========== TRUSTED BY ========== -->
     <section class="section-tight" aria-label="Trusted by">
       <div class="container-cw">
         <div class="marquee-head text-center mb-5">
@@ -145,7 +156,7 @@
       <p class="demo-note text-center text-muted small mt-4">Demo brand marks for illustration — not actual clients.</p>
     </section>
 
-    <!-- SERVICES -->
+    <!-- ========== SERVICES ========== -->
     <section class="section section-alt" id="services">
       <div class="container-cw">
         <div class="section-head reveal">
@@ -197,7 +208,7 @@
       </div>
     </section>
 
-    <!-- OUR STACK -->
+    <!-- ========== OUR STACK ========== -->
     <section class="section" id="stack">
       <div class="container-cw">
         <div class="stack-panel reveal">
@@ -252,7 +263,7 @@
       </div>
     </section>
 
-    <!-- WHY CODEWATT -->
+    <!-- ========== WHY CODEWATT ========== -->
     <section class="section section-alt" id="why">
       <div class="container-cw">
         <div class="section-head reveal"><p class="eyebrow">Why CodeWatt</p><h2 class="section-heading">Small team. Serious technology.</h2></div>
@@ -271,7 +282,7 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
+    <!-- ========== PORTFOLIO ========== -->
     <section class="section" id="projects">
       <div class="container-cw">
         <div class="section-head reveal"><p class="eyebrow">Portfolio</p><h2 class="section-heading">Featured Projects</h2></div>
@@ -290,7 +301,7 @@
       </div>
     </section>
 
-    <!-- AUDIENCE -->
+    <!-- ========== AUDIENCE ========== -->
     <section class="section section-alt" id="audience">
       <div class="container-cw">
         <div class="section-head reveal"><p class="eyebrow">Who We Build For</p><h2 class="section-heading">Two audiences. One studio.</h2></div>
@@ -301,9 +312,7 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         PROCESS – fully reimagined with flow and personality
-         ============================================================ -->
+    <!-- ========== PROCESS ========== -->
     <section class="section" id="process">
       <div class="container-cw">
         <div class="section-head reveal">
@@ -313,35 +322,30 @@
         </div>
         <div class="process-wrap">
           <div class="process-grid">
-            <!-- 1 -->
             <div class="process-card reveal">
               <div class="process-card-num">01</div>
               <i class="bi bi-chat-dots-fill process-card-icon"></i>
               <h4>Discover</h4>
               <p>Deep listening &amp; needs mapping</p>
             </div>
-            <!-- 2 -->
             <div class="process-card reveal reveal-delay-1">
               <div class="process-card-num">02</div>
               <i class="bi bi-clipboard-data process-card-icon"></i>
               <h4>Blueprint</h4>
               <p>Scope, strategy &amp; milestones</p>
             </div>
-            <!-- 3 -->
             <div class="process-card reveal reveal-delay-2">
               <div class="process-card-num">03</div>
               <i class="bi bi-bezier2 process-card-icon"></i>
               <h4>Design</h4>
               <p>Wireframes &amp; creative direction</p>
             </div>
-            <!-- 4 -->
             <div class="process-card reveal reveal-delay-3">
               <div class="process-card-num">04</div>
               <i class="bi bi-code-square process-card-icon"></i>
               <h4>Build</h4>
               <p>Development &amp; iterative testing</p>
             </div>
-            <!-- 5 -->
             <div class="process-card reveal reveal-delay-4">
               <div class="process-card-num">05</div>
               <i class="bi bi-rocket-takeoff process-card-icon"></i>
@@ -350,11 +354,10 @@
             </div>
           </div>
         </div>
-        <!-- subtle note: creative arrow line is in CSS -->
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ========== ABOUT ========== -->
     <section class="section section-alt" id="about">
       <div class="container-cw">
         <div class="about-grid reveal">
@@ -380,7 +383,7 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- ========== TESTIMONIALS ========== -->
     <section class="section" id="testimonials">
       <div class="container-cw">
         <div class="section-head reveal"><p class="eyebrow">Testimonials</p><h2 class="section-heading">What clients say</h2></div>
@@ -393,7 +396,7 @@
           <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"Our online store launched on time, and the checkout flow has been smooth ever since."</p><div class="profile"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Farhana Akter</h5><span>E-commerce Founder</span></div></div></div>
           <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"My IoT project for the polytechnic exhibition worked flawlessly on presentation day."</p><div class="profile"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Tanvir Ahmed</h5><span>Polytechnic Student</span></div></div></div>
           <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">"They understood exactly what a small local business needed, without overcomplicating it."</p><div class="profile"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Shirin Sultana</h5><span>Small Business Owner</span></div></div></div>
-          <!-- duplicates for loop -->
+          <!-- duplicates -->
           <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"CodeWatt helped us create a clean, modern website that truly represents our brand."</p><div class="profile"><img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Rahim Hasan</h5><span>Startup Founder</span></div></div></div>
           <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"The project explanation and documentation helped me understand my electronics project thoroughly."</p><div class="profile"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Nusrat Jahan</h5><span>College Student</span></div></div></div>
           <div class="testimonial-card" aria-hidden="true"><div class="stars">★★★★★</div><p class="testimonial-text">"Responsive, creative, and easy to communicate with. Highly recommended."</p><div class="profile"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt=""><div><h5>Arif Mahmud</h5><span>Business Owner</span></div></div></div>
@@ -404,7 +407,7 @@
       </div>
     </section>
 
-    <!-- FINAL CTA -->
+    <!-- ========== FINAL CTA ========== -->
     <section class="section pt-0">
       <div class="container-cw">
         <div class="final-cta reveal">
@@ -416,8 +419,10 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
-    <footer class="footer">
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
     <div class="container-cw">
       <div class="footer-newsletter reveal">
         <div>
@@ -431,7 +436,7 @@
       </div>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
-          <a href="index.html" class="logo"><span class="logo-mark"><i class="bi bi-lightning-charge-fill"></i></span><span>Code<span class="accent" style="color:#7FA8FF;">Watt</span></span></a>
+          <a href="index.html" class="logo"><img src="img/footer-logo.png" alt="CodeWatt" class="logo-mark-img"><span>Code<span class="accent">Watt</span></span></a>
           <p class="desc">Small technology studio building modern websites, electronics, robotics & IoT — for businesses worldwide and students across Bangladesh.</p>
           <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-github"></i></a></div>
         </div>
@@ -453,6 +458,10 @@
 
   <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-  <script src="./assets/js/script.js"></script>
+  <!-- ============================================================
+       SCRIPT
+       ============================================================ -->
+  <script src="js/main.js"></script>
 
-</body></html>
+</body>
+</html>

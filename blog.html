@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — CodeWatt</title>
+  <title>Blog — CodeWatt</title>
   <meta name="theme-color" content="#0A1A0A" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,9 +32,9 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-right">
         <a href="contact.html" class="btn-cw btn-primary-cw d-none d-md-inline-flex">Start a Project <i class="bi bi-arrow-up-right"></i></a>
@@ -57,32 +57,47 @@
     <section class="section">
       <div class="container-cw">
         <div class="section-head reveal">
-          <p class="eyebrow">Contact</p>
-          <h1 class="section-heading">Let's build something meaningful.</h1>
-          <p class="section-sub">Tell us about your idea — whether it's a business website, an IoT system, or a student robotics project.</p>
+          <p class="eyebrow">Blog</p>
+          <h1 class="section-heading">Tech insights & updates</h1>
+          <p class="section-sub">Stories, experiments, and lessons from our journey building websites, electronics, and IoT systems.</p>
         </div>
-        <div class="contact-grid reveal">
-          <div>
-            <div class="contact-item"><div class="contact-icon"><i class="bi bi-envelope-fill"></i></div><div><h5>Email</h5><a href="mailto:hello@codewatt.com">hello@codewatt.com</a></div></div>
-            <div class="contact-item"><div class="contact-icon"><i class="bi bi-whatsapp"></i></div><div><h5>WhatsApp</h5><a href="tel:+8801700000000">+880 1700-000000</a></div></div>
-            <div class="contact-item"><div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div><div><h5>Location</h5><p>Dhaka, Bangladesh</p></div></div>
-            <div class="contact-item"><div class="contact-icon"><i class="bi bi-clock-fill"></i></div><div><h5>Working Hours</h5><p>Sat–Thu, 10:00 AM – 8:00 PM</p></div></div>
-            <div class="contact-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-github"></i></a></div>
+        <div class="blog-grid">
+          <div class="blog-card reveal">
+            <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Web design trends"></div>
+            <div class="blog-body"><div class="blog-meta"><span><i class="bi bi-calendar3"></i> Jan 15, 2026</span><span><i class="bi bi-clock"></i> 6 min read</span></div><h3>Web Design Trends for 2026</h3><p>Exploring the latest trends in web design — from minimalism to interactive experiences.</p><a href="#" class="btn-cw btn-ghost-cw">Read More <i class="bi bi-arrow-right"></i></a></div>
           </div>
-          <div>
-            <form id="contactForm" novalidate>
-              <div class="row g-3">
-                <div class="col-md-6 form-group"><label class="form-label-cw" for="fName">Name</label><input type="text" id="fName" class="form-control-cw" placeholder="Full name" required /><div class="form-err">Please enter your name.</div></div>
-                <div class="col-md-6 form-group"><label class="form-label-cw" for="fEmail">Email</label><input type="email" id="fEmail" class="form-control-cw" placeholder="you@example.com" required /><div class="form-err">Please enter a valid email.</div></div>
-                <div class="col-md-6 form-group"><label class="form-label-cw" for="fPhone">Phone</label><input type="tel" id="fPhone" class="form-control-cw" placeholder="+880 1XXX-XXXXXX" required /><div class="form-err">Please enter your phone number.</div></div>
-                <div class="col-md-6 form-group"><label class="form-label-cw" for="fBudget">Budget (optional)</label><input type="text" id="fBudget" class="form-control-cw" placeholder="e.g. ৳15,000 – ৳40,000" /></div>
-                <div class="col-12 form-group"><label class="form-label-cw">I'm interested in</label><div class="check-row" id="interestRow"><div class="check-chip"><input type="checkbox" id="intWeb" name="interest" value="Web Development"><label for="intWeb">Web Development</label></div><div class="check-chip"><input type="checkbox" id="intUiux" name="interest" value="UI/UX"><label for="intUiux">UI/UX</label></div><div class="check-chip"><input type="checkbox" id="intElec" name="interest" value="Electronics"><label for="intElec">Electronics</label></div><div class="check-chip"><input type="checkbox" id="intRobo" name="interest" value="Robotics"><label for="intRobo">Robotics</label></div><div class="check-chip"><input type="checkbox" id="intIot" name="interest" value="IoT"><label for="intIot">IoT</label></div><div class="check-chip"><input type="checkbox" id="intStudent" name="interest" value="Student Project"><label for="intStudent">Student Project</label></div></div><div class="form-err" id="interestErr">Please select at least one option.</div></div>
-                <div class="col-12 form-group"><label class="form-label-cw" for="fDetails">Project details</label><textarea id="fDetails" class="form-control-cw" rows="5" placeholder="Tell us about your idea, goals, and timeline" required></textarea><div class="form-err">Please share a few details about your project.</div></div>
-                <div class="col-12"><button type="submit" class="btn-cw btn-primary-cw">Send Inquiry <i class="bi bi-arrow-up-right"></i></button><div class="form-status" id="formStatus"></div></div>
-              </div>
-            </form>
+          <div class="blog-card reveal reveal-delay-1">
+            <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1553406830-ef2513450d76?auto=format&fit=crop&w=800&q=80" alt="Arduino project"></div>
+            <div class="blog-body"><div class="blog-meta"><span><i class="bi bi-calendar3"></i> Feb 2, 2026</span><span><i class="bi bi-clock"></i> 8 min read</span></div><h3>Building an Arduino Line Follower</h3><p>Step-by-step guide to building a line following robot for competitions and learning.</p><a href="#" class="btn-cw btn-ghost-cw">Read More <i class="bi bi-arrow-right"></i></a></div>
+          </div>
+          <div class="blog-card reveal reveal-delay-2">
+            <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="IoT dashboard"></div>
+            <div class="blog-body"><div class="blog-meta"><span><i class="bi bi-calendar3"></i> Feb 20, 2026</span><span><i class="bi bi-clock"></i> 5 min read</span></div><h3>ESP32 Smart Home Dashboard</h3><p>Creating a real-time sensor dashboard using ESP32, MQTT, and a simple web interface.</p><a href="#" class="btn-cw btn-ghost-cw">Read More <i class="bi bi-arrow-right"></i></a></div>
+          </div>
+          <div class="blog-card reveal">
+            <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Business website"></div>
+            <div class="blog-body"><div class="blog-meta"><span><i class="bi bi-calendar3"></i> Mar 5, 2026</span><span><i class="bi bi-clock"></i> 4 min read</span></div><h3>Why Your Business Needs a Website</h3><p>In today's digital world, a professional website is essential for credibility and growth.</p><a href="#" class="btn-cw btn-ghost-cw">Read More <i class="bi bi-arrow-right"></i></a></div>
+          </div>
+          <div class="blog-card reveal reveal-delay-1">
+            <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="PCB design"></div>
+            <div class="blog-body"><div class="blog-meta"><span><i class="bi bi-calendar3"></i> Mar 18, 2026</span><span><i class="bi bi-clock"></i> 7 min read</span></div><h3>PCB Design Basics for Beginners</h3><p>Learn the fundamentals of PCB design, from schematics to fabrication and assembly.</p><a href="#" class="btn-cw btn-ghost-cw">Read More <i class="bi bi-arrow-right"></i></a></div>
+          </div>
+          <div class="blog-card reveal reveal-delay-2">
+            <div class="blog-thumb"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Team work"></div>
+            <div class="blog-body"><div class="blog-meta"><span><i class="bi bi-calendar3"></i> Apr 1, 2026</span><span><i class="bi bi-clock"></i> 3 min read</span></div><h3>Behind the Scenes at CodeWatt</h3><p>A glimpse into how we work, collaborate, and bring ideas to life for our clients.</p><a href="#" class="btn-cw btn-ghost-cw">Read More <i class="bi bi-arrow-right"></i></a></div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="section section-alt text-center">
+      <div class="container-cw reveal">
+        <p class="eyebrow justify-content-center">Stay updated</p>
+        <h2 class="section-heading">Subscribe to our blog</h2>
+        <p class="section-sub mx-auto" style="margin:0 auto 2rem;">Get the latest tech insights, project updates, and tutorials delivered to your inbox.</p>
+        <form class="newsletter-form" style="justify-content:center;" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button>
+        </form>
       </div>
     </section>
   </main>
