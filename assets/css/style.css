@@ -196,370 +196,356 @@
     }
     .topbar-social a:hover { color: var(--brand-primary); }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
-
-.cw-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  height: 72px;
-  background: var(--brand-white);
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s var(--ease);
-}
-
-.cw-nav.scrolled {
-  border-bottom-color: var(--brand-border);
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 24px rgba(10, 26, 10, 0.06);
-}
-
-.cw-nav-inner {
-  position: relative;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-/* ========================================
-   HEADER LOGO
-   ======================================== */
-
-/* IMPORTANT:
-   Header-এর logo-এর জন্য .cw-nav .logo ব্যবহার করা হয়েছে
-   যাতে footer-এর .logo affected না হয়.
-*/
-
-.cw-nav .logo {
-  position: absolute;
-  left: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+    /* ========================================
+      NAVIGATION
+      ======================================== */
+
+    .cw-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 72px;
+      background: var(--brand-white);
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s var(--ease);
+    }
+
+    .cw-nav.scrolled {
+      border-bottom-color: var(--brand-border);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px rgba(10, 26, 10, 0.06);
+    }
+
+    .cw-nav-inner {
+      position: relative;
+      height: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+    /* ========================================
+      HEADER LOGO
+      ======================================== */
+
+    .cw-nav .logo {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
 
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
 
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
+      z-index: 2;
+    }
+
+    .cw-nav .logo-img {
+      height: 90px;
+      width: auto;
+      display: block;
+    }
 
-  z-index: 2;
-}
+    .cw-nav .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
 
-.cw-nav .logo-img {
-  height: 90px;
-  width: auto;
-  display: block;
-}
+      background: var(--brand-primary);
+      color: white;
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-/* Header logo mark যদি কোথাও ব্যবহার করো */
-.cw-nav .logo-mark {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+      font-size: 1.1rem;
+    }
 
-  background: var(--brand-primary);
-  color: white;
+    .cw-nav .logo span.accent {
+      color: var(--brand-primary);
+    }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    .cw-nav .logo-mark-img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
 
-  font-size: 1.1rem;
-}
+      display: block;
+      flex-shrink: 0;
+    }
 
-.cw-nav .logo span.accent {
-  color: var(--brand-primary);
-}
 
-.cw-nav .logo-mark-img {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
+    /* ========================================
+      DESKTOP NAVIGATION
+      ======================================== */
 
-  display: block;
-  flex-shrink: 0;
-}
+    .nav-links {
+      position: absolute;
 
+      left: 50%;
+      top: 50%;
 
-/* ========================================
-   DESKTOP NAVIGATION
-   ======================================== */
+      transform: translate(-50%, -50%);
 
-.nav-links {
-  position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
 
-  left: 50%;
-  top: 50%;
+      margin: 0;
+      padding: 0;
+    }
 
-  transform: translate(-50%, -50%);
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
 
-  display: flex;
-  align-items: center;
-  gap: 2.2rem;
+      color: var(--brand-dark);
 
-  margin: 0;
-  padding: 0;
-}
+      position: relative;
+      padding: 0.2rem 0;
+    }
 
-.nav-links a {
-  font-size: 0.85rem;
-  font-weight: 500;
+    .nav-links a::after {
+      content: '';
 
-  color: var(--brand-dark);
+      position: absolute;
+      left: 0;
+      bottom: -2px;
 
-  position: relative;
-  padding: 0.2rem 0;
-}
+      width: 0;
+      height: 2px;
 
-.nav-links a::after {
-  content: '';
+      background: var(--brand-primary);
 
-  position: absolute;
-  left: 0;
-  bottom: -2px;
+      transition: width 0.3s var(--ease);
+    }
 
-  width: 0;
-  height: 2px;
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
 
-  background: var(--brand-primary);
+    .nav-links a.active {
+      color: var(--brand-primary);
+    }
 
-  transition: width 0.3s var(--ease);
-}
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
-}
+    /* ========================================
+      RIGHT SIDE
+      ======================================== */
 
-.nav-links a.active {
-  color: var(--brand-primary);
-}
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
 
+      margin-left: auto;
+    }
 
-/* ========================================
-   RIGHT SIDE
-   ======================================== */
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    /* ========================================
+      BURGER MENU
+      ======================================== */
 
-  margin-left: auto;
-}
+    .burger {
+      display: none;
 
+      flex-direction: column;
+      gap: 5px;
 
-/* ========================================
-   BURGER MENU
-   ======================================== */
+      background: none;
+      border: none;
 
-.burger {
-  display: none;
+      padding: 6px;
 
-  flex-direction: column;
-  gap: 5px;
+      cursor: pointer;
+    }
 
-  background: none;
-  border: none;
+    .burger span {
+      width: 22px;
+      height: 2px;
 
-  padding: 6px;
+      background: var(--brand-dark);
 
-  cursor: pointer;
-}
+      border-radius: 4px;
 
-.burger span {
-  width: 22px;
-  height: 2px;
+      transition: all 0.3s var(--ease);
+    }
 
-  background: var(--brand-dark);
+    .burger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
 
-  border-radius: 4px;
+    .burger.open span:nth-child(2) {
+      opacity: 0;
+    }
 
-  transition: all 0.3s var(--ease);
-}
+    .burger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
 
-.burger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
 
-.burger.open span:nth-child(2) {
-  opacity: 0;
-}
+    /* ========================================
+      MOBILE PANEL
+      ======================================== */
 
-.burger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
+    .mobile-panel {
+      max-height: 0;
 
+      overflow: hidden;
 
-/* ========================================
-   MOBILE PANEL
-   ======================================== */
+      background: var(--brand-white);
 
-.mobile-panel {
-  max-height: 0;
+      border-bottom: 1px solid transparent;
 
-  overflow: hidden;
+      transition: all 0.35s var(--ease);
+    }
 
-  background: var(--brand-white);
+    .mobile-panel.open {
+      max-height: 500px;
 
-  border-bottom: 1px solid transparent;
+      border-bottom-color: var(--brand-border);
+    }
 
-  transition: all 0.35s var(--ease);
-}
+    .mobile-panel ul {
+      padding: 0.5rem 1.5rem 1.5rem;
+    }
 
-.mobile-panel.open {
-  max-height: 500px;
+    .mobile-panel a {
+      font-weight: 600;
+      font-size: 1rem;
 
-  border-bottom-color: var(--brand-border);
-}
+      padding: 0.8rem 0;
 
-.mobile-panel ul {
-  padding: 0.5rem 1.5rem 1.5rem;
-}
+      border-bottom: 1px solid var(--brand-border);
 
-.mobile-panel a {
-  font-weight: 600;
-  font-size: 1rem;
+      display: block;
+    }
 
-  padding: 0.8rem 0;
+    .mobile-panel li:last-child a {
+      border-bottom: none;
+    }
 
-  border-bottom: 1px solid var(--brand-border);
+    .mobile-panel li:last-child {
+      margin-top: 0.8rem;
+    }
 
-  display: block;
-}
+    .mobile-panel li:last-child a.btn-cw {
+      padding: 0.85rem 1.8rem;
+      justify-content: center;
+    }
 
-.mobile-panel li:last-child a {
-  border-bottom: none;
-}
+    /* ========================================
+      FOOTER LOGO
+      ======================================== */
+    footer .logo {
+      position: static;
+      left: auto;
+      top: auto;
 
-.mobile-panel li:last-child {
-  margin-top: 0.8rem;
-}
+      transform: none;
 
-.mobile-panel li:last-child a.btn-cw {
-  padding: 0.85rem 1.8rem;
-  justify-content: center;
-}
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
 
+      z-index: auto;
+    }
 
-/* ========================================
-   FOOTER LOGO FIX
-   ======================================== */
 
-/*
-   Footer-এও যদি class="logo" থাকে,
-   তাহলে header-এর absolute positioning যেন
-   footer-এ apply না হয়.
-*/
+    /* Footer logo image */
+    footer .logo-mark-img {
+      width: 38px;
+      height: 38px;
 
-footer .logo {
-  position: static;
-  left: auto;
-  top: auto;
+      border-radius: 50%;
 
-  transform: none;
+      object-fit: cover;
 
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
+      display: block;
+      flex-shrink: 0;
+    }
 
-  z-index: auto;
-}
 
+    /* Footer CodeWatt text */
+    footer .logo > span {
+      display: inline-block;
 
-/* Footer logo image */
-footer .logo-mark-img {
-  width: 38px;
-  height: 38px;
+      position: static;
 
-  border-radius: 50%;
+      line-height: 1.2;
+    }
 
-  object-fit: cover;
+    footer .logo span.accent {
+      color: var(--brand-primary);
+    }
 
-  display: block;
-  flex-shrink: 0;
-}
 
+    /* ========================================
+      RESPONSIVE
+      ======================================== */
 
-/* Footer CodeWatt text */
-footer .logo > span {
-  display: inline-block;
+    @media (max-width: 767px) {
 
-  position: static;
+      .cw-nav {
+        height: 64px;
+      }
 
-  line-height: 1.2;
-}
+      .cw-nav-inner {
+        padding: 0 1rem;
+      }
 
-footer .logo span.accent {
-  color: var(--brand-primary);
-}
 
+      /* Mobile Header Logo */
+      .cw-nav .logo {
+        left: 1rem;
+      }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
+      .cw-nav .logo-img {
+        height: 100px;
+        /* height: 58px; */
+      }
 
-@media (max-width: 767px) {
 
-  .cw-nav {
-    height: 64px;
-  }
+      /* Hide Desktop Menu */
+      .nav-links {
+        display: none;
+      }
 
-  .cw-nav-inner {
-    padding: 0 1rem;
-  }
 
+      /* Right Side */
+      .nav-right {
+        margin-left: auto;
+      }
 
-  /* Mobile Header Logo */
-  .cw-nav .logo {
-    left: 1rem;
-  }
 
-  .cw-nav .logo-img {
-    height: 58px;
-  }
+      /* Show Burger */
+      .burger {
+        display: flex;
+      }
 
 
-  /* Hide Desktop Menu */
-  .nav-links {
-    display: none;
-  }
+      /* Footer logo remains normal */
+      footer .logo {
+        position: static;
+        transform: none;
 
-
-  /* Right Side */
-  .nav-right {
-    margin-left: auto;
-  }
-
-
-  /* Show Burger */
-  .burger {
-    display: flex;
-  }
-
-
-  /* Footer logo remains normal */
-  footer .logo {
-    position: static;
-    transform: none;
-
-    display: inline-flex;
-    align-items: center;
-  }
-}
+        display: inline-flex;
+        align-items: center;
+      }
+    }
     /* ========================================
        HERO
        ======================================== */
