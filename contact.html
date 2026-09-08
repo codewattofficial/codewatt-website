@@ -1,27 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — CodeWatt</title>
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Contact Us — Get in Touch with CodeWatt | Web & IoT Agency</title>
+  <meta name="title" content="Contact Us — Get in Touch with CodeWatt | Web & IoT Agency" />
+  <meta name="description" content="Have a project in mind? Contact CodeWatt for custom web design, IoT solutions, robotics prototyping, and software development in Bangladesh. Get a quote today!" />
+  <meta name="keywords" content="Contact CodeWatt, CodeWatt Bangladesh, Web Design Agency Contact, IoT Project Consultation BD, Robotics Project Help" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0A1A0A" />
+
+  <link rel="icon" href="./assets/img/icon.png" type="image/png" />
+  
+  <!-- CRITICAL FIX: Point directly to your contact page URL -->
+  <link rel="canonical" href="https://codewatt.tech/contact.html" />
+
+  <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codewatt.tech/contact.html" />
+  <meta property="og:site_name" content="CodeWatt" />
+  <meta property="og:title" content="Contact Us — Get in Touch with CodeWatt" />
+  <meta property="og:description" content="Reach out to CodeWatt for custom web design, smart IoT solutions, and robotics projects in Bangladesh." />
+  <meta property="og:image" content="https://codewatt.tech/assets/img/shear-logo.png" />
+  <meta property="og:image:alt" content="Contact CodeWatt" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://codewatt.tech/contact.html" />
+  <meta name="twitter:title" content="Contact Us — Get in Touch with CodeWatt" />
+  <meta name="twitter:description" content="Reach out to CodeWatt for custom web design, smart IoT solutions, and robotics projects in Bangladesh." />
+  <meta name="twitter:image" content="https://codewatt.tech/assets/img/shear-logo.png" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap grid utilities + Icons -->
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
   <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Schema.org JSON-LD: ContactPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact CodeWatt",
+    "description": "Contact CodeWatt for consultations on web development, IoT solutions, and robotics projects.",
+    "url": "https://codewatt.tech/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "CodeWatt",
+      "url": "https://codewatt.tech/",
+      "logo": "https://codewatt.tech/assets/img/shear-logo.png",
+      "areaServed": "BD",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Bengali"]
+      }
+    }
+  }
+  </script>
 </head>
 <body>
+  <!-- ============================================================
+       TOPBAR
+       ============================================================ -->
   <div class="topbar">
     <div class="topbar-inner">
       <span><i class="bi bi-geo-alt-fill"></i>Building from Bangladesh • Working Worldwide</span>
       <div class="topbar-social">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-whatsapp"></i></a>
-        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/codewattofficial/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/codewattofficial/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/codewatofficial" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.youtube.com/@codewattofficial" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://discord.com/channels/1543255876477915136/1543255877581279279" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        <a href="https://github.com/codewattofficial" aria-label="GitHub"><i class="bi bi-github"></i></a>
       </div>
     </div>
   </div>
@@ -86,21 +144,38 @@
       </div>
     </section>
   </main>
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
   <footer class="footer">
     <div class="container-cw">
-      <div class="footer-newsletter">
-        <div><h5>Stay in the loop</h5><p>Occasional updates on new projects, IoT experiments & tech notes — no spam, ever.</p></div>
-        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email address" required><button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button></form>
+      <div class="footer-newsletter reveal">
+        <div>
+          <h5>Stay in the loop</h5>
+          <p>Occasional updates on new projects, IoT experiments & tech notes — no spam, ever.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button>
+        </form>
       </div>
       <div class="row g-4">
         <div class="col-lg-4 col-md-6">
           <a href="index.html" class="logo"><img src="./assets/img/footer-logo.png" alt="CodeWatt" class="logo-mark-img"><span>Code<span class="accent">Watt</span></span></a>
-          <p class="desc">Small technology studio building modern websites, electronics, robotics & IoT — for businesses worldwide and students across Bangladesh.</p>
-          <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-github"></i></a></div>
+          <p class="desc">Small technology studio building modern websites, electronics, robotics & IoT — for businesses worldwide and students, researchers & innovators across Bangladesh.</p>
+          <div class="footer-social"><a href="https://www.facebook.com/codewattofficial/"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/codewattofficial/"><i class="bi bi-instagram"></i></a><a href="https://www.linkedin.com/in/codewattofficial/"><i class="bi bi-linkedin"></i></a><a href="https://github.com/codewattofficial"><i class="bi bi-github"></i></a><a href="https://x.com/codewatofficial"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@codewattofficial"><i class="bi bi-youtube"></i></a><a href="https://discord.com/channels/1543255876477915136/1543255877581279279"><i class="bi bi-discord"></i></a></div>
         </div>
-        <div class="col-lg-2 col-md-6 col-6"><h5>Company</h5><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
-        <div class="col-lg-2 col-md-6 col-6"><h5>Services</h5><ul class="footer-links"><li><a href="services.html">Web Design</a></li><li><a href="services.html">Electronics</a></li><li><a href="services.html">IoT Solutions</a></li></ul></div>
-        <div class="col-lg-4 col-md-6"><h5>Get in Touch</h5><ul class="footer-contact"><li><i class="bi bi-geo-alt-fill"></i> Chattogram, Bangladesh</li><li><i class="bi bi-envelope-fill"></i> <a href="mailto:hello@codewatt.com">hello@codewatt.com</a></li><li><i class="bi bi-telephone-fill"></i> <a href="tel:+8801000000000">+880 1XXX-XXXXXX</a></li><li><i class="bi bi-clock-fill"></i> Sat – Thu, 10am – 7pm</li></ul></div>
+        <div class="col-lg-2 col-md-6 col-6"><h5>Company</h5><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="col-lg-2 col-md-6 col-6"><h5>Services</h5><ul class="footer-links"><li><a href="services.html">Web Design</a></li><li><a href="services.html">Web Development</a></li><li><a href="services.html">Electronics</a></li><li><a href="services.html">Robotics</a></li><li><a href="services.html">IoT Solutions</a></li></ul></div>
+        <div class="col-lg-4 col-md-6">
+          <h5>Get in Touch</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i> Chattogram, Bangladesh</li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:hello@codewatt.example.com">codewatt.official@gmail.com</a></li>
+            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+8801000000000">+880 1890-495599</a></li>
+            <li><i class="bi bi-clock-fill"></i> Mon – Sun, 9am – 11pm</li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom"><span>© 2026 CodeWatt. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
     </div>
