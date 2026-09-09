@@ -1081,8 +1081,8 @@
 
     .process-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1.2rem;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
       position: relative;
       z-index: 1;
     }
