@@ -186,12 +186,16 @@
           <h5>Stay in the loop</h5>
           <p>Occasional updates on new projects, IoT experiments & tech notes — no spam, ever.</p>
         </div>
-        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" novalidate>
-  <input type="hidden" name="form-name" value="newsletter" />
-  <input type="email" name="email" placeholder="Your email address" required />
-  <button type="submit" class="btn-cw btn-primary-cw">Subscribe <i class="bi bi-arrow-up-right"></i></button>
-  <div class="newsletter-status mt-2 small"></div>
-</form>
+        <form class="newsletter-form" name="codewatt-newsletter" method="POST" data-netlify="true" novalidate>
+          <input type="hidden" name="form-name" value="codewatt-newsletter" />
+          <div class="newsletter-input-group">
+            <input type="email" name="email" placeholder="Your email address" required />
+            <button type="submit" class="btn-cw btn-primary-cw">
+              Subscribe <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </div>
+          <div class="newsletter-status"></div>
+        </form>
 
       </div>
       <div class="row g-4">

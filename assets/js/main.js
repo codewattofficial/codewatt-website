@@ -271,7 +271,7 @@
         .then(response => {
           if (response.ok) {
             if (statusDiv) {
-              statusDiv.textContent = 'Thank you for subscribing!';
+              statusDiv.textContent = '<br>Thank you for subscribing!';
               statusDiv.style.color = '#28a745';
             }
             form.reset();
