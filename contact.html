@@ -130,9 +130,10 @@
             <div class="contact-social"><a href="https://www.facebook.com/codewattofficial/"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/codewattofficial/"><i class="bi bi-instagram"></i></a><a href="https://www.linkedin.com/in/codewattofficial/"><i class="bi bi-linkedin"></i></a><a href="https://github.com/codewattofficial"><i class="bi bi-github"></i></a><a href="https://x.com/codewatofficial"><i class="bi bi-twitter-x"></i></a><a href="https://www.youtube.com/@codewattofficial"><i class="bi bi-youtube"></i></a><a href="https://discord.com/channels/1543255876477915136/1543255877581279279"><i class="bi bi-discord"></i></a></div>
           </div>
           <div>
-           <form id="contactForm" name="contact-main" method="POST" data-netlify="true" novalidate>
-            <!-- হিডেন ইনপুটের value-তেও নতুন নাম দিন -->
-            <input type="hidden" name="form-name" value="contact-main" />
+           <form id="contactForm" name="codewatt" method="POST" data-netlify="true" novalidate>
+              <input type="hidden" name="form-name" value="codewatt" />
+              
+              <input type="hidden" name="interest" />
 
               <div class="row g-3">
                 <div class="col-md-6 form-group">
@@ -161,12 +162,12 @@
                 <div class="col-12 form-group">
                   <label class="form-label-cw">I'm interested in</label>
                   <div class="check-row" id="interestRow">
-                    <div class="check-chip"><input type="checkbox" id="intWeb" name="interest" value="Web Development"><label for="intWeb">Web Development</label></div>
-                    <div class="check-chip"><input type="checkbox" id="intUiux" name="interest" value="UI/UX"><label for="intUiux">UI/UX</label></div>
-                    <div class="check-chip"><input type="checkbox" id="intElec" name="interest" value="Electronics"><label for="intElec">Electronics</label></div>
-                    <div class="check-chip"><input type="checkbox" id="intRobo" name="interest" value="Robotics"><label for="intRobo">Robotics</label></div>
-                    <div class="check-chip"><input type="checkbox" id="intIot" name="interest" value="IoT"><label for="intIot">IoT</label></div>
-                    <div class="check-chip"><input type="checkbox" id="intStudent" name="interest" value="Student Project"><label for="intStudent">Student Project</label></div>
+                    <div class="check-chip"><input type="checkbox" id="intWeb" value="Web Development"><label for="intWeb">Web Development</label></div>
+                    <div class="check-chip"><input type="checkbox" id="intUiux" value="UI/UX"><label for="intUiux">UI/UX</label></div>
+                    <div class="check-chip"><input type="checkbox" id="intElec" value="Electronics"><label for="intElec">Electronics</label></div>
+                    <div class="check-chip"><input type="checkbox" id="intRobo" value="Robotics"><label for="intRobo">Robotics</label></div>
+                    <div class="check-chip"><input type="checkbox" id="intIot" value="IoT"><label for="intIot">IoT</label></div>
+                    <div class="check-chip"><input type="checkbox" id="intStudent" value="Student Project"><label for="intStudent">Student Project</label></div>
                   </div>
                   <div class="form-err" id="interestErr">Please select at least one option.</div>
                 </div>
