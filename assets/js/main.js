@@ -213,7 +213,7 @@ if (form) {
       form.reset();
       document.querySelectorAll('.is-invalid').forEach(f => f.classList.remove('is-invalid'));
     })
-    .catch((error) => {
+    .catch(() => {
       status.textContent = 'Something went wrong. Please try again.';
       status.className = 'form-status show';
     });
