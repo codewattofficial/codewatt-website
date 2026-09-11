@@ -168,36 +168,55 @@
     });
   }
 
-  /* ---------- Contact page: form validation ---------- */
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('formStatus');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      let valid = true;
-      ['fName', 'fEmail', 'fPhone', 'fDetails'].forEach(id => {
-        const field = document.getElementById(id);
-        if (!field) return;
-        let ok = field.value.trim().length > 0;
-        if (id === 'fEmail' && ok) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
-        field.classList.toggle('is-invalid', !ok);
-        if (!ok) valid = false;
-      });
-      const interests = document.querySelectorAll('#interestRow input:checked');
-      const interestErr = document.getElementById('interestErr');
-      if (interestErr) {
-        if (interests.length === 0) { interestErr.style.display = 'block'; valid = false; }
-        else { interestErr.style.display = 'none'; }
-      }
-      if (!valid) {
-        status.textContent = 'Please fix the highlighted fields above.';
-        status.className = 'form-status show';
-        return;
-      }
+  /* ---------- Contact page: form validation & Netlify AJAX Submission ---------- */
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
+
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    ['fName', 'fEmail', 'fPhone', 'fDetails'].forEach(id => {
+      const field = document.getElementById(id);
+      if (!field) return;
+      let ok = field.value.trim().length > 0;
+      if (id === 'fEmail' && ok) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+      field.classList.toggle('is-invalid', !ok);
+      if (!ok) valid = false;
+    });
+
+    const interests = document.querySelectorAll('#interestRow input:checked');
+    const interestErr = document.getElementById('interestErr');
+    if (interestErr) {
+      if (interests.length === 0) { interestErr.style.display = 'block'; valid = false; }
+      else { interestErr.style.display = 'none'; }
+    }
+
+    if (!valid) {
+      status.textContent = 'Please fix the highlighted fields above.';
+      status.className = 'form-status show';
+      return;
+    }
+
+    // Netlify Fetch Request (AJAX)
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
       status.textContent = 'Thanks — your inquiry has been received. We will get back to you soon.';
       status.className = 'form-status show ok';
       form.reset();
       document.querySelectorAll('.is-invalid').forEach(f => f.classList.remove('is-invalid'));
+    })
+    .catch((error) => {
+      status.textContent = 'Something went wrong. Please try again.';
+      status.className = 'form-status show';
     });
-  }
+  });
+}
 })();
