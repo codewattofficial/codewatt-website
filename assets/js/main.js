@@ -168,7 +168,7 @@
     });
   }
 
-  /* ---------- Contact page: form validation & Netlify AJAX Submission ---------- */
+  /* ---------- Contact page: Form Validation & Netlify AJAX Submission ---------- */
 const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 
@@ -181,16 +181,23 @@ if (form) {
       const field = document.getElementById(id);
       if (!field) return;
       let ok = field.value.trim().length > 0;
-      if (id === 'fEmail' && ok) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+      if (id === 'fEmail' && ok) {
+        ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+      }
       field.classList.toggle('is-invalid', !ok);
       if (!ok) valid = false;
     });
 
-    const interests = document.querySelectorAll('#interestRow input:checked');
+    const checkedInterestsElements = document.querySelectorAll('#interestRow input:checked');
     const interestErr = document.getElementById('interestErr');
+
     if (interestErr) {
-      if (interests.length === 0) { interestErr.style.display = 'block'; valid = false; }
-      else { interestErr.style.display = 'none'; }
+      if (checkedInterestsElements.length === 0) {
+        interestErr.style.display = 'block';
+        valid = false;
+      } else {
+        interestErr.style.display = 'none';
+      }
     }
 
     if (!valid) {
@@ -199,19 +206,32 @@ if (form) {
       return;
     }
 
-    // Netlify Fetch Request (AJAX)
     const formData = new FormData(form);
+
+    const formName = form.getAttribute('name') || 'contact-v2';
+    formData.set('form-name', formName);
+
+    const checkedValues = Array.from(checkedInterestsElements)
+                               .map(cb => cb.value)
+                               .join(', ');
+    formData.set('interest', checkedValues);
 
     fetch('/', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     })
-    .then(() => {
-      status.textContent = 'Thanks — your inquiry has been received. We will get back to you soon.';
-      status.className = 'form-status show ok';
-      form.reset();
-      document.querySelectorAll('.is-invalid').forEach(f => f.classList.remove('is-invalid'));
+    .then(response => {
+      if (response.ok) {
+        status.textContent = 'Thanks — your inquiry has been received. We will get back to you soon.';
+        status.className = 'form-status show ok';
+        
+        form.reset();
+        document.querySelectorAll('.is-invalid').forEach(f => f.classList.remove('is-invalid'));
+        if (interestErr) interestErr.style.display = 'none';
+      } else {
+        throw new Error('Form submission failed.');
+      }
     })
     .catch(() => {
       status.textContent = 'Something went wrong. Please try again.';
@@ -219,4 +239,5 @@ if (form) {
     });
   });
 }
+
 })();
