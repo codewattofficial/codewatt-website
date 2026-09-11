@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://codewatt.netlify.app/</loc>
+    <loc>https://codewatt.netlify.app</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Services Page -->
   <url>
-    <loc>https://codewatt.netlify.app/services.html</loc>
+    <loc>https://codewatt.netlify.appservices.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +19,7 @@
 
   <!-- Projects Page -->
   <url>
-    <loc>https://codewatt.netlify.app/projects.html</loc>
+    <loc>https://codewatt.netlify.appprojects.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://codewatt.netlify.app/about.html</loc>
+    <loc>https://codewatt.netlify.appabout.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,7 +35,7 @@
 
   <!-- Blog Page -->
   <url>
-    <loc>https://codewatt.netlify.app/blog.html</loc>
+    <loc>https://codewatt.netlify.appblog.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -43,7 +43,7 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://codewatt.netlify.app/contact.html</loc>
+    <loc>https://codewatt.netlify.appcontact.html</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
