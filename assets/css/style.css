@@ -672,7 +672,7 @@
     }
     .float-chip i { color: var(--brand-primary); }
     .chip-1 { top: 8%; left: -9%; }
-    .chip-2 { top: 56%; right: -11%; animation-delay: 1s; }
+    .chip-2 { top: 65%; right: -11%; animation-delay: 1s; }
     .chip-3 { bottom: -6%; left: 8%; animation-delay: 2s; }
     @keyframes floatY { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-9px); } }
 
@@ -1428,6 +1428,14 @@
       font-size: 0.88rem;
       min-width: 230px;
     }
+
+    .newsletter-status {
+        width: 100%;
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+      }
+
     .newsletter-form input::placeholder { color: rgba(255,255,255,0.4); }
     .newsletter-form input:focus { outline: none; border-color: var(--brand-primary); }
 
