@@ -169,75 +169,123 @@
   }
 
   /* ---------- Contact page: Form Validation & Netlify AJAX Submission ---------- */
-const form = document.getElementById('contactForm');
-const status = document.getElementById('formStatus');
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
 
-if (form) {
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    let valid = true;
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let valid = true;
 
-    ['fName', 'fEmail', 'fPhone', 'fDetails'].forEach(id => {
-      const field = document.getElementById(id);
-      if (!field) return;
-      let ok = field.value.trim().length > 0;
-      if (id === 'fEmail' && ok) {
-        ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
-      }
-      field.classList.toggle('is-invalid', !ok);
-      if (!ok) valid = false;
-    });
+        ['fName', 'fEmail', 'fPhone', 'fDetails'].forEach(id => {
+          const field = document.getElementById(id);
+          if (!field) return;
+          let ok = field.value.trim().length > 0;
+          if (id === 'fEmail' && ok) {
+            ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+          }
+          field.classList.toggle('is-invalid', !ok);
+          if (!ok) valid = false;
+        });
 
-    const checkedInterestsElements = document.querySelectorAll('#interestRow input:checked');
-    const interestErr = document.getElementById('interestErr');
+        const checkedInterestsElements = document.querySelectorAll('#interestRow input:checked');
+        const interestErr = document.getElementById('interestErr');
 
-    if (interestErr) {
-      if (checkedInterestsElements.length === 0) {
-        interestErr.style.display = 'block';
-        valid = false;
-      } else {
-        interestErr.style.display = 'none';
-      }
+        if (interestErr) {
+          if (checkedInterestsElements.length === 0) {
+            interestErr.style.display = 'block';
+            valid = false;
+          } else {
+            interestErr.style.display = 'none';
+          }
+        }
+
+        if (!valid) {
+          status.textContent = 'Please fix the highlighted fields above.';
+          status.className = 'form-status show';
+          return;
+        }
+
+        const formData = new FormData(form);
+
+        const formName = form.getAttribute('name') || 'contact-v2';
+        formData.set('form-name', formName);
+
+        const checkedValues = Array.from(checkedInterestsElements)
+                                  .map(cb => cb.value)
+                                  .join(', ');
+        formData.set('interest', checkedValues);
+
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(response => {
+          if (response.ok) {
+            status.textContent = 'Thanks — your inquiry has been received. We will get back to you soon.';
+            status.className = 'form-status show ok';
+            
+            form.reset();
+            document.querySelectorAll('.is-invalid').forEach(f => f.classList.remove('is-invalid'));
+            if (interestErr) interestErr.style.display = 'none';
+          } else {
+            throw new Error('Form submission failed.');
+          }
+        })
+        .catch(() => {
+          status.textContent = 'Something went wrong. Please try again.';
+          status.className = 'form-status show';
+        });
+      });
     }
 
-    if (!valid) {
-      status.textContent = 'Please fix the highlighted fields above.';
-      status.className = 'form-status show';
-      return;
-    }
+    /* ---------- Footer Newsletter Handling ---------- */
+    const newsletterForms = document.querySelectorAll('.newsletter-form');
 
-    const formData = new FormData(form);
+    newsletterForms.forEach(form => {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    const formName = form.getAttribute('name') || 'contact-v2';
-    formData.set('form-name', formName);
+        const emailInput = form.querySelector('input[name="email"]');
+        const statusDiv = form.querySelector('.newsletter-status');
+        const email = emailInput ? emailInput.value.trim() : '';
 
-    const checkedValues = Array.from(checkedInterestsElements)
-                               .map(cb => cb.value)
-                               .join(', ');
-    formData.set('interest', checkedValues);
+        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(response => {
-      if (response.ok) {
-        status.textContent = 'Thanks — your inquiry has been received. We will get back to you soon.';
-        status.className = 'form-status show ok';
-        
-        form.reset();
-        document.querySelectorAll('.is-invalid').forEach(f => f.classList.remove('is-invalid'));
-        if (interestErr) interestErr.style.display = 'none';
-      } else {
-        throw new Error('Form submission failed.');
-      }
-    })
-    .catch(() => {
-      status.textContent = 'Something went wrong. Please try again.';
-      status.className = 'form-status show';
+        if (!isValidEmail) {
+          if (statusDiv) {
+            statusDiv.textContent = 'Please enter a valid email address.';
+            statusDiv.style.color = '#ff4d4d';
+          }
+          return;
+        }
+
+        const formData = new FormData(form);
+
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(response => {
+          if (response.ok) {
+            if (statusDiv) {
+              statusDiv.textContent = 'Thank you for subscribing!';
+              statusDiv.style.color = '#28a745';
+            }
+            form.reset();
+          } else {
+            throw new Error('Subscription failed');
+          }
+        })
+        .catch(() => {
+          if (statusDiv) {
+            statusDiv.textContent = 'Something went wrong. Please try again.';
+            statusDiv.style.color = '#ff4d4d';
+          }
+        });
+      });
     });
-  });
-}
 
 })();
